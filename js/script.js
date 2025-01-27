@@ -89,7 +89,7 @@ if(localStorage.getItem('token')){
         window.location.href = "../createNew/index.html";
     })
     collection.addEventListener('click', ()=> {
-        window.location.href = "../collection";
+        window.location.href = "../collection/index.html";
     })
 }else {
     loginbtn.innerText = "Log In";
