@@ -1,7 +1,7 @@
 async function getData() {
     try {
         const user = localStorage.getItem('username');
-        const response = await fetch(`http://localhost:1337/fragrances/${user}`);
+        const response = await fetch(`https://api-development-assignment-fillip.onrender.com/fragrances/${user}`);
         const data = await response.json();
         displayData(data);
     } catch (error) {
@@ -51,7 +51,7 @@ if(localStorage.getItem('token')){
         window.location.reload();
     })
     createNew.addEventListener('click', ()=> {
-        window.location.href = "/API-Development-Assignment-Fillip/createNew/createNew.html";
+        window.location.href = "../createNew/index.html";
     })
     home.addEventListener('click', ()=> {
         window.location.href = "../index.html";

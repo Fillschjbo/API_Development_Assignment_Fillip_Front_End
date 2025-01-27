@@ -1,6 +1,6 @@
 async function getData() {
     try {
-        const response = await fetch("http://localhost:1337/fragrances");
+        const response = await fetch("https://api-development-assignment-fillip.onrender.com/fragrances");
         const data = await response.json();
         displayData(data);
     } catch (error) {
@@ -10,7 +10,7 @@ async function getData() {
 
 async function deletePost(id) {
     try {
-        const response = await fetch(`http://localhost:1337/fragrances/${id}`, {
+        const response = await fetch(`https://api-development-assignment-fillip.onrender.com/fragrances/${id}`, {
             method: "DELETE",
             headers: {
                 "Authorization": `Bearer ${localStorage.getItem('token')}`,
@@ -89,7 +89,7 @@ if(localStorage.getItem('token')){
         window.location.href = "../createNew/index.html";
     })
     collection.addEventListener('click', ()=> {
-        window.location.href = "../collection/index.html";
+        window.location.href = "../collection";
     })
 }else {
     loginbtn.innerText = "Log In";

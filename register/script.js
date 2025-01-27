@@ -11,7 +11,7 @@ document.getElementById('register').addEventListener("submit", async (e)=>{
     }
     console.log(body)
 
-    const response = await fetch("http://localhost:1337/user", {
+    const response = await fetch("https://api-development-assignment-fillip.onrender.com/user", {
         method: "POST",
         headers: {
             "content-type": "application/json"

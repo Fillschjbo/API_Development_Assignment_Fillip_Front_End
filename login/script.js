@@ -1,7 +1,7 @@
 async function login() {
     const username = document.querySelector("#username").value;
     const password = document.querySelector("#password").value;
-    const res = await fetch("http://localhost:1337/login", {
+    const res = await fetch("https://api-development-assignment-fillip.onrender.com/login", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

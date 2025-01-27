@@ -15,7 +15,7 @@ document.getElementById('createNew').addEventListener("submit", async (e)=>{
     }
     console.log(body)
 
-    const response = await fetch("http://localhost:1337/fragrances", {
+    const response = await fetch("https://api-development-assignment-fillip.onrender.com/fragrances", {
         method: "POST",
         headers: {
             "content-type": "application/json",
