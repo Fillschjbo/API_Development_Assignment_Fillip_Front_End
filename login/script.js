@@ -14,15 +14,18 @@ async function login() {
 
     const data = await res.json();
 
-    if (data.ok) {
-        localStorage.setItem('userId', data.id)
-        localStorage.setItem('username', data.username)
-        localStorage.setItem("token", data.accessToken);
-        window.location.href = "../index.html"
-    }else {
-        console.error("Invalid username or password, please try again")
+    if (res.ok) {
+        try {
+            localStorage.setItem('userId', data.id);
+            localStorage.setItem('username', data.username);
+            localStorage.setItem("token", data.accessToken);
+            window.location.href = "../index.html";
+        } catch (error) {
+            console.error("Error saving data to localStorage:", error);
+        }
+    } else {
+        console.error("Invalid username or password, please try again");
     }
-
 }
 
 document.querySelector("form").addEventListener("submit", (e) => {
