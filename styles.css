@@ -1,0 +1,76 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #CADCFC;
+    margin: 0;
+}
+
+#fragranceList {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    color: #00246B;
+}
+
+img {
+    border-radius: 8px;
+    filter: drop-shadow(5px 2px 4px rgba(1, 26, 26, 0.16));
+}
+
+.header {
+    width: 100vw;
+    display: flex;
+    align-items: start;
+    color: #CADCFC;
+    background-color: #00246B;
+    margin-bottom: 20px;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.header ul li {
+    font-family: Kollektif, sans-serif;
+}
+
+form {
+    position: absolute;
+    top: 50%
+}
+
+input{
+    min-width: 50vw;
+    display: flex;
+    background-color: #eff6ff;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    height: 20px;
+    padding: 8px;
+}
+
+button {
+    color: #CADCFC;
+    background-color: #00246B;
+    border: none;
+    border-radius: 10px;
+    width: 50vw;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.h2 {
+    position: absolute;
+    top: 25%;
+    color: #00246B;
+    font-family: Kollektif, sans-serif;
+    font-size: 56px;
+}
